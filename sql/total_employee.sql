@@ -1,12 +1,12 @@
-select tt.fio, tt.cnt_from_date
-from (select t.fio, t.cnt_from_date
-        from (select e.FirstName||' '||e.LastName fio,
+SELECT tt.fio, tt.cnt_from_date
+FROM (SELECT t.fio, t.cnt_from_date
+        FROM (SELECT e.FirstName||' '||e.LastName fio,
                      count(i.Total) cnt_from_date,
                      e.EmployeeId
-                   from Invoice i, Customer c, Employee e
-                   where i.CustomerId = c.CustomerId
-                     and c.SupportRepId = e.EmployeeId
-                     and i.InvoiceDate > date('2010-01-01 00:00:00')
-                   group by e.EmployeeId ) t
-      order by cnt_from_date desc limit 3 ) tt
-order by cnt_from_date desc
+                   FROM Invoice i, Customer c, Employee e
+                   WHERE i.CustomerId = c.CustomerId
+                     AND c.SupportRepId = e.EmployeeId
+                     AND i.InvoiceDate > date('2010-01-01 00:00:00')
+                   GROUP BY e.EmployeeId ) t
+      ORDER BY cnt_from_date DESC LIMIT 3 ) tt
+ORDER BY cnt_from_date DESC

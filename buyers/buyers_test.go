@@ -7,7 +7,7 @@ import (
 
 // BenchmarkSimplestNTimes выполняет бенчмарк N раз.
 func BenchmarkSimplestNTimesFast(b *testing.B) {
-	inp := [][]int{{1, 2}, {4, 7}, {3, 6}}
+	inp := [][]int{{4, 7}, {2, 4}, {9, 8}, {2, 7}, {4, 6}, {7, 3}, {9, 14}, {14, 9}, {5, 2}}
 	for i := 0; i < b.N; i++ {
 		// Здесь выполняем функцию для тестирования
 		fast(inp)
@@ -15,7 +15,6 @@ func BenchmarkSimplestNTimesFast(b *testing.B) {
 }
 
 func BenchmarkSimplestNTimesSlow(b *testing.B) {
-	//inp := [][]int{{1, 2}, {4, 7}, {3, 6}}
 	inp := [][]int{{4, 7}, {2, 4}, {9, 8}, {2, 7}, {4, 6}, {7, 3}, {9, 14}, {14, 9}, {5, 2}}
 	for i := 0; i < b.N; i++ {
 		// Здесь выполняем функцию для тестирования
@@ -32,7 +31,6 @@ func Test_fast(t *testing.T) {
 		args args
 		want []int
 	}{
-		// TODO: Add test cases.
 		{
 			name: "correct small",
 			args: args{
@@ -66,7 +64,6 @@ func Test_slow(t *testing.T) {
 		args args
 		want []int
 	}{
-		// TODO: Add test cases.
 		{
 			name: "correct small",
 			args: args{

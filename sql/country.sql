@@ -1,5 +1,5 @@
-select t.country, t.total
-from (select i.BillingCountry country, sum(i.Total) total
-      from Invoice i
-      group by i.BillingCountry) t
-order by t.total
+SELECT t.country, t.total
+FROM (SELECT i.BillingCountry country, sum(i.Total) total
+      FROM Invoice i
+      GROUP BY i.BillingCountry) t
+ORDER BY t.total

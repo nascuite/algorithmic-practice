@@ -1,4 +1,4 @@
-package sales
+package warehouses
 
 import (
 	"fmt"
