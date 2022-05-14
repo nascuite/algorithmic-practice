@@ -1,4 +1,4 @@
-package masks
+package main
 
 import (
 	"fmt"

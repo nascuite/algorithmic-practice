@@ -4,3 +4,10 @@
 3. warehouses - задание «Склады»
 4. sql - задания на sql
 5. training - Тренировочные задания
+# Алгоритмы
+6. graph - implementation DFS, BFS, Dijkstra graph
+# Leetcode
+7. Implement strStr
+8. Remove Duplicates from Sorted Array
+9. Two Sum
+10. Roman to Integer

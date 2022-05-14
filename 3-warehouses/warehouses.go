@@ -1,4 +1,4 @@
-package warehouses
+package main
 
 import (
 	"fmt"
