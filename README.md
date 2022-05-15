@@ -11,3 +11,5 @@
 8. Remove Duplicates from Sorted Array
 9. Two Sum
 10. Roman to Integer
+11. Single Number
+12. Plus One
